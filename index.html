@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="design.css">
+	<style>
+		h1 {
+			padding-left: 60px;
+			color: rgb(5, 103, 133);
+			padding-top: 15px;
+			padding-bottom: 15px;
+			position: relative;
+			
+		}
+		p {
+			text-align: center;
+			position: relative;
+			left: -7px;
+		}
+	
+		</style>
+    </head>
+<body>
+<h1>Visualization Dataset</h1>
+<div class="container">
+	<input id="filter" type="text">
+	<div class="table">
+		<div class="table-header">
+			<div class="header__item"><a id="id" class="filter__link" href="#"><b>Order ID</b></a></div>
+			<div class="header__item"><a id="name" class="filter__link " href="#"><b>Coustomer Name</b></a></div>
+			<div class="header__item"><a id="score" class="filter__link " href="#"><b>Trust Score</b></a></div>
+			<div class="header__item"><a id="Product" class="filter__link " href="#"><b>Number Of Products</b></a></div>
+			<div class="header__item"><a id="value" class="filter__link " href="#"><b>Order Value</b></a></div>
+			<div class="header__item"><a id="dis" class="filter__link " href="#"><b>Coupons & Discount</b></a></div>
+			<div class="header__item"><a id="time" class="filter__link " href="#"><b>Order Date & Time</b></a></div>
+			<div class="header__item"><a id="status" class="filter__link" href="#"><b>Status</b></a></div>
+			<div class="header__item"><a id="deldate" style="padding-right: 10px;"class="filter__link" href="#"><b>Delivery Date</b></a></div>
+		</div>
+		<div class="table-content"id="search">	
+			<div class="table-row" id="click" >		
+				<p class="table-data"  style="padding-top: 15px;">ORD268212</p>
+				<p class="table-data"  style="padding-top: 15px;">Kacy Martlew</p>
+				<div class="progress-bar--wrap progress-bar--deepgreen"style="padding-top: 12px;" id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 80%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.80</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">3</p>
+				<p class="table-data" style="padding-top: 15px;">7500</p>
+				<p class="table-data" style="padding-top: 15px;">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/4/2020 15:58</p>
+				<p class="table-data" style="padding-top: 15px;color: red;">Cancelled</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>
+			</div>
+			<div class="hidden-data" id="data">
+				<a><b style="color: rgb(5, 138, 143);">Kacy Martlew's Information : </b>
+				<br><b>Email :</b> kmartlewe@unblog.fr<br><b>Phone :</b> 718-617-0131<br><b>District :</b> New York.<br><b>City :</b> Brooklyn.<br><b>Shipping Address :</b>7111 Thompson Parkway.</a>
+			</div>
+
+			<div class="table-row" id="click1">
+				<p class="table-data" style="padding-top: 15px;">ORD043679</p>
+				<p class="table-data" style="padding-top: 15px;">Rina Costerd</p>
+				<div class="progress-bar--wrap progress-bar--lightgreen" style="padding-top: 12px;" id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 73%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.73</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">5</p>
+				<p class="table-data" style="padding-top: 15px;">6000</p>
+				<p class="table-data" style="padding-top: 15px;">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/5/2020 12:25</p>
+				<p class="table-data" style="padding-top: 15px; color: #f7a81d">Shipped</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>
+			</div>
+			<div class="hidden-data" id="data1">
+				<a><b style="color: rgb(5, 138, 143);">Rina Costerd's Information : </b>
+				<br><b>Email :</b> rcosterd0@netlog.com<br><b>Phone :</b> 214-391-5720<br><b>District :</b> Texas.<br><b>City :</b> Dallas.<br><b>Shipping Address :</b>20 Sunfield Parkway.</a>
+			</div>
+
+			<div class="table-row" id="click2" >
+				<p class="table-data" style="padding-top: 15px;">ORD599767</p>
+				<p class="table-data" style="padding-top: 15px;">Patty Curgenuer</p>
+				<div class="progress-bar--wrap progress-bar--deepgreen"style="padding-top: 12px;" id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 96%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.96</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">3</p>
+				<p class="table-data" style="padding-top: 15px;">4500</p>
+				<p class="table-data" style="padding-top: 10px; color: #66cc00;">VOUCHER 30
+					Voucher: 1350
+				</p>
+				<p class="table-data" style="padding-top: 15px;">8/7/2020 14:21</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(10, 92, 199)">Confirmed</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data2">
+				<a><b style="color: rgb(5, 138, 143);">Patty Curgenuer's Information : </b>
+				<br><b>Email :</b> pcurgenuerk@ucla.edu<br><b>Phone :</b> 909-590-8965<br><b>District :</b> California.<br><b>City :</b> San Bernardino.<br><b>Shipping Address :</b>09686 Dahle Street.</a>
+				</div>
+				
+			<div class="table-row" id="click3" >
+				<p class="table-data" style="padding-top: 15px;">ORD159465</p>
+				<p class="table-data" style="padding-top: 15px;">Rachele Vampouille</p>
+				<div class="progress-bar--wrap progress-bar--yellow " style="padding-top: 12px;">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 34%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.34</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">2</p>
+				<p class="table-data" style="padding-top: 15px;">4000</p>
+				<p class="table-data" style="padding-top: 10px;color:#00b359;">DISCOUNT20
+					Discount: 800
+				</p>
+				<p class="table-data" style="padding-top: 15px;">8/7/2020 19:28</p>
+				<p class="table-data" style="padding-top: 15px; color:rgb(235, 0, 137)">Returned</p>
+				<p class="table-data"style="padding-top: 15px;">9/20/2020</p>
+			</div>
+			<div class="hidden-data" id="data3">
+				<a><b style="color: rgb(5, 138, 143);">Rachele Vampouille's Information : </b>
+				<br><b>Email :</b> rvampouille5@nps.gov<br><b>Phone :</b> 757-424-0653<br><b>District :</b> Virginia.<br><b>City :</b> Norfolk.<br><b>Shipping Address :</b>1619 American Ash Drive.</a>
+			</div>
+
+				<div class="table-row" id="click4" >		
+					<p class="table-data"  style="padding-top: 15px;">ORD538806</p>
+					<p class="table-data"  style="padding-top: 15px;">Nickolaus Wearden</p>
+					<div class="progress-bar--wrap progress-bar--deepgreen"style="padding-top: 12px;" id="score">
+						<div class="progress-bar">
+						<div class="progress-bar--inner" style="width: 78%;"></div>
+						</div>
+						<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.78</b></span>
+					</div>
+					<p class="table-data" style="padding-top: 15px;">4</p>
+					<p class="table-data" style="padding-top: 15px;">1000</p>
+					<p class="table-data" style="padding-top: 15px;">Coupon: None</p>
+					<p class="table-data" style="padding-top: 15px;">8/8/2020 13:26</p>
+					<p class="table-data" style="padding-top: 15px;color: red;">Cancelled</p>
+					<p class="table-data" style="padding-top: 15px;">N\A</p>
+				</div>
+			<div class="hidden-data" id="data4">
+				<a><b style="color: rgb(5, 138, 143);">Nickolaus Wearden's Information : </b>
+				<br><b>Email :</b> nwearden3@wordpress.org<br><b>Phone :</b> 862-174-7118<br><b>District :</b> New Jersey.<br><b>City :</b> Paterson.<br><b>Shipping Address :</b> 4 Chive Place.</a>
+			</div>
+
+				
+			<div class="table-row" id="click5" >		
+				<p class="table-data"  style="padding-top: 15px;">ORD099928</p>
+				<p class="table-data"  style="padding-top: 15px;">Libbie Kildahl</p>
+				<div class="progress-bar--wrap progress-bar--deepgreen"style="padding-top: 12px;" id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 87%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.87</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">4</p>
+				<p class="table-data" style="padding-top: 15px;">4500</p>
+				<p class="table-data" style="padding-top: 8px; color:#0088cc;">EID30<br>
+					Discount 1350</p>
+				<p class="table-data" style="padding-top: 15px;">8/9/2020 3:53</p>
+				<p class="table-data" style="padding-top: 15px;color: rgb(10, 92, 199);">Confirmed</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>
+			</div>
+			<div class="hidden-data" id="data5">
+				<a><b style="color: rgb(5, 138, 143);">Libbie Kildahl's Information : </b>
+				<br><b>Email :</b> lkildahlg@opensource.org<br><b>Phone :</b> 414-736-8473<br><b>District :</b> Wisconsin.<br><b>City :</b> Milwaukee.<br><b>Shipping Address :</b> 9176 Sutherland Way.</a>
+			</div>
+
+			
+			<div class="table-row" id="click6" >		
+				<p class="table-data"  style="padding-top: 15px;">ORD130510</p>
+				<p class="table-data"  style="padding-top: 15px;">Somerset Worner</p>
+				<div class="progress-bar--wrap progress-bar--lightgreen"style="padding-top: 12px;" id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 60%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.6</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">4</p>
+				<p class="table-data" style="padding-top: 15px;">5500</p>
+				<p class="table-data" style="padding-top: 15px;">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/10/2020 0:15</p>
+				<p class="table-data" style="padding-top: 15px;color: red;">Cancelled</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>
+			</div>
+			<div class="hidden-data" id="data6">
+				<a><b style="color: rgb(5, 138, 143);">Somerset Worner's Information : </b>
+				<br><b>Email :</b> swornern@over-blog.com<br><b>Phone :</b> 605-647-5715<br><b>District :</b> South Dakota.<br><b>City :</b> Sioux Falls.<br><b>Shipping Address :</b> 464 Sommers Alley.</a>
+			</div>
+
+			<div class="table-row" id="click7" >		
+				<p class="table-data"  style="padding-top: 15px;">ORD735250</p>
+				<p class="table-data"  style="padding-top: 15px;">Delcina Mackelworth</p>
+				<div class="progress-bar--wrap progress-bar--deepgreen"style="padding-top: 12px;" id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 94%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.94</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">1</p>
+				<p class="table-data" style="padding-top: 15px;">1500</p>
+				<p class="table-data" style="padding-top: 8px; color: #0088cc; ">EID30<br>
+				Discount 450</p>
+				<p class="table-data" style="padding-top: 15px;">8/11/2020 8:30</p>
+				<p class="table-data" style="padding-top: 15px;color: rgb(10, 92, 199);">Confirmed</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>
+			</div>
+			<div class="hidden-data" id="data7">
+				<a><b style="color: rgb(5, 138, 143);">Delcina Mackelworth's Information : </b>
+				<br><b>Email :</b> dmackelworthl@abc.net.au<br><b>Phone :</b> 305-858-0285<br><b>District :</b> Florida.<br><b>City :</b> Hialeah.<br><b>Shipping Address :</b> 5 Shelley Circle.</a>
+			</div>	
+
+			<div class="table-row" id="click8" >
+				<p class="table-data" style="padding-top: 15px;">ORD939217</p>
+				<p class="table-data" style="padding-top: 15px;">Babita Pickavant</p>
+				<div class="progress-bar--wrap progress-bar--deepgreen"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 76%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.76</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">7</p>
+				<p class="table-data" style="padding-top: 15px;">3000</p>
+				<p class="table-data" style="padding-top: 8px;  color:#66cc00;">VOUCHER 30
+					Discount: 900
+				</p>
+				<p class="table-data" style="padding-top: 15px;">8/11/2020 19:34</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(7, 218, 88)">Processing</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data8">
+				<a><b style="color: rgb(5, 138, 143);">Babita Pickavant's Information : </b>
+				<br><b>Email :</b> bpickavantc@sciencedirect.com<br><b>Phone :</b> 301-454-6166<br><b>District :</b> Maryland.<br><b>City :</b> Silver Spring.<br><b>Shipping Address :</b> 46 Stephen Drive.</a>
+			</div>
+
+			<div class="table-row" id="click9" >
+				<p class="table-data" style="padding-top: 15px;">ORD302920</p>
+				<p class="table-data" style="padding-top: 15px;">Kare Pickrill</p>
+				<div class="progress-bar--wrap progress-bar--lightgreen"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 58%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.58</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">5</p>
+				<p class="table-data" style="padding-top: 15px;">4500</p>
+				<p class="table-data" style="padding-top: 15px;">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/13/2020 6:02</p>
+				<p class="table-data" style="padding-top: 15px;color:#07792d">Delivered</p>
+				<p class="table-data" style="padding-top: 15px;">9/4/2020</p>	
+			</div>
+				<div class="hidden-data" id="data9">
+				<a><b style="color: rgb(5, 138, 143);">Kare Pickrill's Information : </b>
+				<br><b>Email :</b> kpickrill2@bing.com<br><b>Phone :</b> 321-918-9372<br><b>District :</b> Florida.<br><b>City :</b> Orlando.<br><b>Shipping Address :</b> 03672 Rusk Crossing.</a>
+			</div>
+
+			<div class="table-row" id="click10" >
+				<p class="table-data" style="padding-top: 15px;">ORD182564</p>
+				<p class="table-data" style="padding-top: 15px;">Heloise Ybarra</p>
+				<div class="progress-bar--wrap progress-bar--red"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 15%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.15</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">7</p>
+				<p class="table-data" style="padding-top: 15px;">7000</p>
+				<p class="table-data" style="padding-top: 15px; ">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/13/2020 6:52</p>
+				<p class="table-data" style="padding-top: 15px;color: #f7a81d">Shipped</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data10">
+				<a><b style="color: rgb(5, 138, 143);">Heloise Ybarra's Information : </b>
+				<br><b>Email :</b> hybarraj@github.io<br><b>Phone :</b> 410-879-9176<br><b>District :</b> Maryland.<br><b>City :</b> Baltimore.<br><b>Shipping Address :</b> 74 Johnson Circle.</a>
+			</div>
+			
+			<div class="table-row" id="click11" >
+				<p class="table-data" style="padding-top: 15px;">ORD001603</p>
+				<p class="table-data" style="padding-top: 15px;">Nancee Attfield</p>
+				<div class="progress-bar--wrap progress-bar--deepgreen"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 86%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.86</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">7</p>
+				<p class="table-data" style="padding-top: 15px;">2000</p>
+				<p class="table-data" style="padding-top: 15px;">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/13/2020 6:52</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(7, 218, 88)">Processing</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data11">
+				<a><b style="color: rgb(5, 138, 143);">Nancee Attfield's Information : </b>
+				<br><b>Email :</b> nattfield4@360.cn<br><b>Phone :</b> 806-870-6367<br><b>District :</b> Texas.<br><b>City :</b> Amarillo.<br><b>Shipping Address :</b> 5 Acker Pass.</a>
+			</div>
+
+			<div class="table-row" id="click12" >
+				<p class="table-data" style="padding-top: 15px;">ORD335783</p>
+				<p class="table-data" style="padding-top: 15px;">Arnold Normand</p>
+				<div class="progress-bar--wrap progress-bar--deepgreen"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 94%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.94</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">6</p>
+				<p class="table-data" style="padding-top: 15px;">2000</p>
+				<p class="table-data" style="padding-top: 15px;">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/16/2020 23:22</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(7, 218, 88)">Processing</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data12">
+				<a><b style="color: rgb(5, 138, 143);">Arnold Normand's Information : </b>
+				<br><b>Email :</b> anormand8@jugem.jp<br><b>Phone :</b> 334-326-1594<br><b>District :</b> Alabama.<br><b>City :</b> Montgomery.<br><b>Shipping Address :</b> 9322 Northwestern Alley.</a>
+			</div>
+
+			<div class="table-row" id="click13" >
+				<p class="table-data" style="padding-top: 15px;">ORD849838</p>
+				<p class="table-data" style="padding-top: 15px;">Eugenia Kemery</p>
+				<div class="progress-bar--wrap progress-bar--yellow"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 30%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.3</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">1</p>
+				<p class="table-data" style="padding-top: 15px;">7500</p>
+				<p class="table-data" style="padding-top: 15px;">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/17/2020 11:27</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(10, 92, 199)">Confirmed</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data13">
+				<a><b style="color: rgb(5, 138, 143);">Eugenia Kemery's Information : </b>
+				<br><b>Email :</b> ekemeryo@addtoany.com<br><b>Phone :</b> 425-470-8133<br><b>District :</b> Washington.<br><b>City :</b> Seattle.<br><b>Shipping Address :</b> 799 Manufacturers Lane.</a>
+			</div>
+
+			<div class="table-row" id="click14" >
+				<p class="table-data" style="padding-top: 15px;">ORD208895</p>
+				<p class="table-data" style="padding-top: 15px;">Herrick Greschik</p>
+				<div class="progress-bar--wrap progress-bar--deepgreen"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 90%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.9</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">4</p>
+				<p class="table-data" style="padding-top: 15px;">4000</p>
+				<p class="table-data" style="padding-top: 10px; color:  #66cc00;">VOUCHER 20
+				Discount: 800</p>
+				<p class="table-data" style="padding-top: 15px;">8/19/2020 7:49</p>
+				<p class="table-data" style="padding-top: 15px;color:  #f7a81d">Shipped</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data14">
+				<a><b style="color: rgb(5, 138, 143);">Herrick Greschik's Information : </b>
+				<br><b>Email :</b> hgreschikb@friendfeed.com<br><b>Phone :</b> 310-811-5113<br><b>District :</b> California.<br><b>City :</b> Santa Monica.<br><b>Shipping Address :</b> 1141 Grayhawk Hill.</a>
+			</div>
+
+			<div class="table-row" id="click15" >
+				<p class="table-data" style="padding-top: 15px;">ORD307445</p>
+				<p class="table-data" style="padding-top: 15px;">Kim Benettini</p>
+				<div class="progress-bar--wrap progress-bar--yellow"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 45%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.45</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">6</p>
+				<p class="table-data" style="padding-top: 15px;">6500</p>
+				<p class="table-data" style="padding-top: 15px; ">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/13/2020 6:52</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(235, 0, 137)">Returned</p>
+				<p class="table-data" style="padding-top: 15px;">9/20/2020</p>	
+			</div>
+				<div class="hidden-data" id="data15">
+				<a><b style="color: rgb(5, 138, 143);">Kim Benettini's Information : </b>
+				<br><b>Email :</b> kbenettinii@1688.com<br><b>Phone :</b> 563-942-6390<br><b>District :</b> Iowa.<br><b>City :</b> Davenport.<br><b>Shipping Address :</b> 35508 Armistice Parkway.</a>
+			</div>
+
+			<div class="table-row" id="click16" >
+				<p class="table-data" style="padding-top: 15px;">ORD702774</p>
+				<p class="table-data" style="padding-top: 15px;">Lynnea Lamy</p>
+				<div class="progress-bar--wrap progress-bar--yellow"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 30%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.3</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">4</p>
+				<p class="table-data" style="padding-top: 15px;">5500</p>
+				<p class="table-data" style="padding-top: 15px;">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/20/2020 4:44</p>
+				<p class="table-data" style="padding-top: 15px;color:#07792d">Delivered</p>
+				<p class="table-data" style="padding-top: 15px;">9/12/2020</p>	
+			</div>
+				<div class="hidden-data" id="data16">
+				<a><b style="color: rgb(5, 138, 143);">Lynnea Lamy's Information : </b>
+				<br><b>Email :</b> llamy6@artisteer.com<br><b>Phone :</b> 915-206-5138<br><b>District :</b> Texas.<br><b>City :</b> El Paso.<br><b>Shipping Address :</b> 6759 Chinook Road.</a>
+			</div>
+
+			<div class="table-row" id="click17" >
+				<p class="table-data" style="padding-top: 15px;">ORD294070</p>
+				<p class="table-data" style="padding-top: 15px;">Doralynn Phelipeau</p>
+				<div class="progress-bar--wrap progress-bar--lightgreen"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 53%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.53</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">5</p>
+				<p class="table-data" style="padding-top: 15px;">5500</p>
+				<p class="table-data" style="padding-top: 15px;">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/13/2020 6:52</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(7, 218, 88)">Processing</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data17">
+				<a><b style="color: rgb(5, 138, 143);">Doralynn Phelipeau's Information : </b>
+				<br><b>Email :</b> dphelipeauf@bloglines.com<br><b>Phone :</b> 208-310-9397<br><b>District :</b> Oregon.<br><b>City :</b> Portland.<br><b>Shipping Address :</b> 74512 Blackbird Parkway.</a>
+			</div>
+
+			<div class="table-row" id="click18" >
+				<p class="table-data" style="padding-top: 15px;">ORD978596</p>
+				<p class="table-data" style="padding-top: 15px;">Anni Isenor</p>
+				<div class="progress-bar--wrap progress-bar--yellow"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 32%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.32</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">6</p>
+				<p class="table-data" style="padding-top: 15px;">1500</p>
+				<p class="table-data" style="padding-top: 10px; color: #00b359;">DISCOUNT 20
+				Discount: 300</p>
+				<p class="table-data" style="padding-top: 15px;">8/20/2020 23:30</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(7, 218, 88)">Processing</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data18">
+				<a><b style="color: rgb(5, 138, 143);">Anni Isenor's Information : </b>
+				<br><b>Email :</b> aisenora@google.fr<br><b>Phone :</b> 505-198-7511<br><b>District :</b> New Mexico.<br><b>City :</b> Albuquerque.<br><b>Shipping Address :</b> 6650 Elka Way.</a>
+			</div>
+
+			<div class="table-row" id="click19" >
+				<p class="table-data" style="padding-top: 15px;">ORD146650</p>
+				<p class="table-data" style="padding-top: 15px;">Lura Limbert</p>
+				<div class="progress-bar--wrap progress-bar--deepgreen"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 96%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.96</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">2</p>
+				<p class="table-data" style="padding-top: 15px;">4000</p>
+				<p class="table-data" style="padding-top: 15px; ">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/21/2020 12:30</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(10, 92, 199)">Confirmed</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data19">
+				<a><b style="color: rgb(5, 138, 143);">Lura Limbert's Information : </b>
+				<br><b>Email :</b> llimberth@booking.com<br><b>Phone :</b> 312-711-2749<br><b>District :</b> Illinois.<br><b>City :</b> Chicago.<br><b>Shipping Address :</b> 1511 Arapahoe Avenue.</a>
+			</div>
+
+			<div class="table-row" id="click20" >
+				<p class="table-data" style="padding-top: 15px;">ORD264749</p>
+				<p class="table-data" style="padding-top: 15px;">Kiri Youle</p>
+				<div class="progress-bar--wrap progress-bar--red"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 9%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.09</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">2</p>
+				<p class="table-data" style="padding-top: 15px;">3000</p>
+				<p class="table-data" style="padding-top: 15px; ;">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/23/2020 12:16</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(235, 0, 137)">Returned</p>
+				<p class="table-data" style="padding-top: 15px;">9/5/2020</p>	
+			</div>
+				<div class="hidden-data" id="data20">
+				<a><b style="color: rgb(5, 138, 143);">Kiri Youle's Information : </b>
+				<br><b>Email :</b> kyoule9@buzzfeed.com<br><b>Phone :</b> 801-830-8051<br><b>District :</b> Utah.<br><b>City :</b> Salt Lake City.<br><b>Shipping Address :</b> 776 Armistice Point.</a>
+			</div>
+
+			<div class="table-row" id="click21" >
+				<p class="table-data" style="padding-top: 15px;">ORD823453</p>
+				<p class="table-data" style="padding-top: 15px;">Clerissa Treleven</p>
+				<div class="progress-bar--wrap progress-bar--red"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 1%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.01</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">6</p>
+				<p class="table-data" style="padding-top: 15px;">4000</p>
+				<p class="table-data" style="padding-top: 15px; ">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/24/2020 19:14</p>
+				<p class="table-data" style="padding-top: 15px;color: rgb(235, 0, 137)">Returned</p>
+				<p class="table-data" style="padding-top: 15px;">9/6/2020</p>	
+			</div>
+				<div class="hidden-data" id="data21">
+				<a><b style="color: rgb(5, 138, 143);">Clerissa Treleven's Information : </b>
+				<br><b>Email :</b> ctreleven1@admin.ch<br><b>Phone :</b> 314-205-5003<br><b>District :</b> Missouri.<br><b>City :</b> Saint Louis.<br><b>Shipping Address :</b> 11861 Carioca Avenue.</a>
+			</div>
+
+			<div class="table-row" id="click22" >
+				<p class="table-data" style="padding-top: 15px;">ORD322787</p>
+				<p class="table-data" style="padding-top: 15px;">Tonia Clamp</p>
+				<div class="progress-bar--wrap progress-bar--lightgreen"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 68%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.68</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">3</p>
+				<p class="table-data" style="padding-top: 15px;">1500</p>
+				<p class="table-data" style="padding-top: 8px; color: #0088cc;">EID 30
+					<br> Discount: 450</p>
+				<p class="table-data" style="padding-top: 15px;">8/25/2020 15:43</p>
+				<p class="table-data" style="padding-top: 15px;color: #f7a81d">Shipped</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data22">
+				<a><b style="color: rgb(5, 138, 143);">Tonia Clamp's Information : </b>
+				<br><b>Email :</b> tclamp7@barnesandnoble.com<br><b>Phone :</b> 850-337-9394<br><b>District :</b> Florida.<br><b>City :</b> Tallahassee.<br><b>Shipping Address :</b> 62092 Eagan Junction.</a>
+			</div>
+
+			<div class="table-row" id="click23" >
+				<p class="table-data" style="padding-top: 15px;">ORD584457</p>
+				<p class="table-data" style="padding-top: 15px;">Ingmar Robley</p>
+				<div class="progress-bar--wrap progress-bar--yellow"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 28%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.28</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">6</p>
+				<p class="table-data" style="padding-top: 15px;">3500</p>
+				<p class="table-data" style="padding-top: 10px; color: #66cc00;">VOUCHER 20
+				Voucher: 700</p>
+				<p class="table-data" style="padding-top: 15px;">8/26/2020 0:41</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(7, 218, 88)">Processing</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data23">
+				<a><b style="color: rgb(5, 138, 143);">Ingmar Robley's Information : </b>
+				<br><b>Email :</b> irobleym@google.com<br><b>Phone :</b> 859-289-1023<br><b>District :</b> Kentucky.<br><b>City :</b> Lexington.<br><b>Shipping Address :</b> 493 Oneill Plaza.</a>
+			</div>
+
+			<div class="table-row" id="click24" >
+				<p class="table-data" style="padding-top: 15px;">ORD608826</p>
+				<p class="table-data" style="padding-top: 15px;">Sampson Verbruggen</p>
+				<div class="progress-bar--wrap progress-bar--yellow"style="padding-top: 12px;"id="score">
+					<div class="progress-bar">
+					<div class="progress-bar--inner" style="width: 40%;"></div>
+					</div>
+					<span class="progress-bar--counter" style="padding-top: 0px;"><b>0.4</b></span>
+				</div>
+				<p class="table-data" style="padding-top: 15px;">7</p>
+				<p class="table-data" style="padding-top: 15px;">7500</p>
+				<p class="table-data" style="padding-top: 15px;">Coupon: None</p>
+				<p class="table-data" style="padding-top: 15px;">8/27/2020 5:06</p>
+				<p class="table-data" style="padding-top: 15px;color:rgb(7, 218, 88)">Processing</p>
+				<p class="table-data" style="padding-top: 15px;">N\A</p>	
+			</div>
+				<div class="hidden-data" id="data24">
+				<a><b style="color: rgb(5, 138, 143);">Sampson Verbruggen's Information : </b>
+				<br><b>Email :</b> sverbruggend@reference.com<br><b>Phone :</b> 763-754-3825<br><b>District :</b> Minnesota.<br><b>City :</b> Maple Plain.<br><b>Shipping Address :</b> 3476 Kings Lane.</a>
+			</div>
+
+		</div>	
+	</div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js'></script>
+<script src="script.js"></Script>
+    
+</body>
